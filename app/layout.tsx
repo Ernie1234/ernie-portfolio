@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Nunito, Comfortaa, Playfair_Display } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import "./globals.css";
+import NavBar from "@/components/NavBar";
+
+const nunito = Nunito({
+  variable: "--font-Nunito",
   subsets: ["latin"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const comfortaa = Comfortaa({
+  weight: ["400", "700"], // Or your desired weights
+  style: ["normal"], // Or your desired styles
+  subsets: ["latin"], // Choose your desired character subsets
+  display: "swap", // Recommended for better user experience
+  variable: "--comfortaa-font", // Optional, for CSS variables
+});
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nunito.className} ${comfortaa.className} ${playfairDisplay.className} antialiased bg-slate-100 dark:bg-slate-900`}
       >
+        <NavBar />
         {children}
       </body>
     </html>
