@@ -9,6 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Link from "next/link";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,7 +30,9 @@ function Footer() {
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
-              <BsLinkedin size={28} />
+              <Link href="https://www.linkedin.com/in/anumahjoshua/">
+                <BsLinkedin size={28} />
+              </Link>
             </TooltipTrigger>
             <TooltipContent>
               <p>LinkedIn</p>
@@ -39,7 +42,9 @@ function Footer() {
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
-              <MdMail size={40} />
+              <Link href="anumahjoshuaeneye@gmail.com">
+                <MdMail size={40} />
+              </Link>
             </TooltipTrigger>
             <TooltipContent>
               <p>Gmail</p>

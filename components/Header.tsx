@@ -13,10 +13,14 @@ function Header() {
         <h1 className="scroll-m-20 text-3xl md:text-4xl font-bold tracking-tight lg:text-5xl text-shadow my-4 lg:my-6 font-tertiary">
           Hello, my name is Anumah Joshua Eneye
         </h1>
-        <p className="lg:text-lg text-muted-foreground font-display lg:my-4">
-          Short text with details about you, what you do or your professional
-          career. You can add more information on the about page.
+        <p className="lg:text-base text-muted-foreground font-display lg:my-4">
+          I&apos;m a passionate software engineer with a Telecommunications
+          Engineering background, blending 5+ years of professional experience
+          and 8 years of continuous learning to build intuitive, user-centric
+          solutions. Currently at OPEX Consulting, I specialize in JavaScript,
+          TypeScript, and Go.
         </p>
+
         <div className="flex gap-4">
           <Button>Resume</Button>
           <Button variant="outline">LinkedIn</Button>
