@@ -12,7 +12,7 @@ export default function ProjectCard() {
             <h3 className="text-2xl font-semibold tracking-tight">
               Project name
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground font-primary">
               I created this personal project in order to show how to create an
               interface in Figma using a portfolio as an example.
             </p>
