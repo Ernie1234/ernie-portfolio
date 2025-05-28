@@ -28,9 +28,11 @@ export default function NavBar() {
       )}
     >
       <div className="p-2.5 px-5  container flex justify-between items-center mx-auto ">
-        <h1 className="font-display hidden md:block font-semibold">
-          Anumah Joshua Eneye{" "}
-        </h1>
+        <Link href="/">
+          <h1 className="font-display hidden md:block font-semibold">
+            Anumah Joshua
+          </h1>
+        </Link>
         <h1 className="font-tertiary block md:hidden">AJE</h1>
         <ul className="flex gap-4 font-primary">
           <li>
