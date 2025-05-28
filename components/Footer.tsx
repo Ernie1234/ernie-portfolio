@@ -1,15 +1,17 @@
 "use client";
 
+import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
 import { MdMail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import Link from "next/link";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,6 +19,18 @@ function Footer() {
   return (
     <footer className="py-12 md:py-14 lg:py-16 xl:py-20 space-y-2 md:space-y-4 lg:space-y-6">
       <div className="mx-auto flex justify-center items-center space-x-4">
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <Link href="https://github.com/Ernie1234">
+                <FaGithub size={35} />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Github</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
