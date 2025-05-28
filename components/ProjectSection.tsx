@@ -11,7 +11,6 @@ function ProjectSection() {
         </span>
         ts
       </p>
-
       <ProjectCard />
     </div>
   );

@@ -31,11 +31,11 @@ async function SkillSection() {
           return (
             <div
               className="flex flex-col justify-between items-center space-y-2"
-              key={tech.title}
+              key={tech.skill}
             >
               <Image
                 src={imageUrl}
-                alt={tech.title}
+                alt={tech.skill}
                 className="object-contain w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
                 width={100}
                 height={100}
