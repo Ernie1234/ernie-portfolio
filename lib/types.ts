@@ -10,8 +10,8 @@ export interface ISanityProject extends SanityDocument {
     _type: string;
   };
   publishedAt: string;
-  description?: string;
-  tags?: string[];
+  description: string;
+  tags: string[];
   image: { asset: { _ref: string; _type: string }; _type: string };
 }
 export interface ISanitySkill extends SanityDocument {

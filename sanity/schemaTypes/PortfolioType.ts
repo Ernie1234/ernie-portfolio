@@ -24,6 +24,7 @@ export const projectType = defineType({
       of: [
         defineArrayMember({
           type: "string",
+          validation: (rule) => rule.required(),
         }),
       ],
       options: {
@@ -34,6 +35,7 @@ export const projectType = defineType({
       name: "link",
       title: "Link",
       type: "url",
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: "image",
@@ -42,6 +44,7 @@ export const projectType = defineType({
       options: {
         hotspot: true,
       },
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: "slug",
